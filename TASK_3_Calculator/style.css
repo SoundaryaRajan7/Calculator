@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font:bold 14px Aria,sans-serif;
+}
+
+html {
+    height: 100%;
+    background: white;
+    background: radial-gradient(circle, #fff 20%, #ccc);
+    background-size: cover;
+}
+
+#calculator {
+    width: 325px;
+    height: auto;
+
+    margin: 100px auto;
+    padding: 20px 20px 9PX;
+
+    background: #000000;
+    background: linear-gradient(#000000, #5d5d5e);
+    border-radius: 3px;
+    box-shadow: 0px 4px #000000, 0px 10px 15px rgba(0,0,0,0.2);
+}
+
+#screen {
+    float: right;
+
+    height: 40px;
+    width: 212px;
+
+    padding: 0 10px;
+
+    background: rgb(252, 252, 252);
+    border-radius: 3px;
+   
+    font-size: 17px;
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+
+.keys, .top {
+    overflow: hidden;
+}
+
+
+.keys span, #clear {
+    float: left;
+    position: relative;
+    top: 0;
+
+    cursor: pointer;
+
+    width: 66px;
+    height: 36px;
+
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+
+    margin: 0 7px 11px 0;
+
+    color: #000000;
+    line-height: 36px;
+    text-align: center;
+
+    user-select: none;
+
+    transition: all 0.2s ease;
+}
+
+.keys span.operator {
+    background: #1a9e00;
+    margin-right: 0; 
+}
+
+.keys span.operator:hover {
+    background: #1a9e00;
+    color: #ffffff;
+    box-shadow: 0px 4px #7c807cc5;
+}
+
+.keys span.eval {
+    background: #0f4b0b;
+    box-shadow: 0px 4px#7c807cc5;
+    color:#000000;
+}
+
+.keys span.eval:hover {
+    background:   #0f4b0b;
+    box-shadow: 0px 4px#7c807cc5;
+    color: #ffffff;
+}
+
+.keys span.eval:active {
+    box-shadow: 0px 0px #7c807cc5;
+    top: 4px;
+}
+
+
+#clear {
+    background: #fd5101;
+    box-shadow: 0px 4px #7c807cc5;
+    color: white;
+}
+
+#clear:hover {
+    background: #ff5101;
+    box-shadow: 0px 4px #7c807cc5;
+    color: white;
+}
+
+#clear:active {
+    top: 4px;
+    box-shadow: 0px 0px #7c807cc5;
+}
+
+
+.keys span:hover {
+    background: #eb0b0b;
+    box-shadow: 0px 4px  #7c807cc5;
+    color: white;
+}
+
+.keys span:active {
+    box-shadow: 0px 0px #7c807cc5;
+    top: 4px;
+}
